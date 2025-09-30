@@ -4,6 +4,8 @@ import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.util.Set;
+
 @Entity
 @Table(name = "mesas")
 @NoArgsConstructor @AllArgsConstructor
@@ -17,4 +19,5 @@ public class Mesa {
     @ManyToMany(mappedBy = "mesas")
     @JsonBackReference("reserva-mesa")
     @Getter @Setter private Set<Reserva> reservas;
+
 }

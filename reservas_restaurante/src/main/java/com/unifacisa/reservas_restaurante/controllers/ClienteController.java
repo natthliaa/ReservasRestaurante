@@ -14,12 +14,19 @@ public class ClienteController {
     private ClienteService clienteService;
 
     @PostMapping
-    public Cliente cadastrarCliente(Cliente clienteCadastro){
+    public Cliente cadastrarCliente(@RequestBody Cliente clienteCadastro){
         return clienteService.cadastrarCliente(clienteCadastro);
     }
 
     @GetMapping
     public List<Cliente> listarClientes(){
         return clienteService.listarClientes();
+
     }
+
+    @DeleteMapping("/cpf")
+    public void deletarCliente(Long cpf){
+        clienteService.deletarCliente(cpf);
+    }
+
 }
