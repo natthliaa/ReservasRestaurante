@@ -1,7 +1,7 @@
 # Reservas de Restaurante
 
-[![Java](https://img.shields.io/badge/Java-17-blue)](https://www.java.com/)
-[![Spring Boot](https://img.shields.io/badge/SpringBoot-3.2-green)](https://spring.io/projects/spring-boot)
+[![Java](https://img.shields.io/badge/Java-21-blue)](https://www.java.com/)
+[![Spring Boot](https://img.shields.io/badge/SpringBoot-3.5.6-green)](https://spring.io/projects/spring-boot)
 [![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
 
 Sistema de **gerenciamento de reservas de restaurante** com Spring Boot, permitindo operações **CRUD** em entidades inter-relacionadas: **Cliente**, **Reserva** e **Mesa**, com diferentes tipos de relacionamentos.
@@ -58,9 +58,9 @@ Cliente ↔ Reserva → Um-para-Muitos
 Reserva ↔ Mesa → Muitos-para-Muitos
 
 Tecnologias
-Java 17
+Java 21
 
-Spring Boot
+Spring Boot 3.5.6
 
 Spring Data JPA
 
@@ -95,7 +95,3 @@ mvn spring-boot:run
 Acesse os endpoints via Postman ou navegador.
 
 Console H2: http://localhost:8080/h2-console
-Usuário: sa | Senha: (vazia)
-
-
-Feito com ❤️ por Nathália Andrade
