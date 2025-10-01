@@ -36,7 +36,7 @@ public class Reserva {
     @Getter @Setter private Set<Mesa> mesas;
 
     @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "ocasiao_id", referencedColumnName = "id")
+    @JoinColumn(name = "ocasiao_id", referencedColumnName = "id",unique = true)
     @JsonManagedReference("reserva-ocasiao")
     @Getter @Setter private Ocasiao ocasiao;
 

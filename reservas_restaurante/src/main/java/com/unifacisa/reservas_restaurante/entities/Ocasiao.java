@@ -12,8 +12,7 @@ public class Ocasiao {
     @Id
     @GeneratedValue
     @Getter private Long id;
-    @Enumerated(EnumType.STRING)
-    @Getter @Setter private Ocasiao ocasiaoAtual;
+    @Getter @Setter private String ocasiao;
     @Getter @Setter private String descricao;
 
     @OneToOne(mappedBy = "ocasiao")

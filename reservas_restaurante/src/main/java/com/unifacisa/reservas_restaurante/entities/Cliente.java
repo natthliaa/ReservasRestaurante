@@ -12,7 +12,7 @@ import java.util.List;
 public class Cliente {
 
     @Id
-    @Getter private Long cpf;
+    @Getter @Setter private Long cpf;
 
     @Column(nullable = false, length = 100)
     @Getter @Setter private String nome;

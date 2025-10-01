@@ -2,12 +2,14 @@ package com.unifacisa.reservas_restaurante.services;
 
 import com.unifacisa.reservas_restaurante.entities.Cliente;
 import com.unifacisa.reservas_restaurante.repositories.ClienteRepositorio;
+import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
+@AllArgsConstructor
 public class ClienteService {
 
     @Autowired
